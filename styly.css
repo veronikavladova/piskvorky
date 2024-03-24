@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #615dad, #ffc8da); /* farba pozadia */
+    height: 100vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.container {
+    width: 70%; 
+    max-width: 400px;
+    border-radius: 7%;
+    background-color: #283e50; 
+    margin: 0px; 
+    padding: 0px; 
+    color: #ffffff; /* farba text*/
+    display: flex;
+    flex-direction: column;}
+
+
+.header h1 {
+    font-family: 'Lobster', cursive;
+    margin: 0px; 
+    text-align: center;
+    font-size: 36px; 
+}
+
+.game-image {
+    width: 100%;
+    height: 200px; 
+    background: url('uvodni.jpg') no-repeat center center;
+    background-size: cover; 
+    margin-top: 0; 
+    margin-bottom: 20px; 
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px
+}
+
+
+.intro {
+    padding: 10px;
+    font-size: 16px; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.footer a .rules, .footer a .start-game { 
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #1fcca4;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    text-align: center;
+    display: block; 
+    width: 100%;
+}
+.footer a.rules-link:hover .rules,
+.footer a.start-game-link:hover .start-game { 
+    background-color: #1cbb96; 
+}
+
+.footer a.start-game-link .start-game {
+    background-color: #0197f6;
+}
+
+.footer a.start-game-link:hover .start-game {
+    background-color: #0090e9; 
+}
