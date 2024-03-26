@@ -1,80 +1,73 @@
-@font-face {
-    font-family: 'Lobster';
-    src: url('fonts/Lobster-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body, html {
-    margin: 0;
-    padding: 0px;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #615dad, #ffc8da); /* farba pozadia */
-    height: 100vh; 
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-}
-
-.container {
-    width: 70%; 
-    max-width: 400px;
-    border-radius: 7%;
-    background-color: #283e50; 
-    margin: 0px; 
-    padding: 0px; 
-    color: #ffffff; /* farba text*/
-    display: flex;
-    flex-direction: column;}
-
-
-.header h1 {
-    font-family: 'Lobster', cursive;
-    margin: 0px; 
+body {
+    background: linear-gradient(#615dad, #ffc8da);
+    height: 100%;
+  }
+  
+  h1 {
+    font-family: "Lobster";
     text-align: center;
-    font-size: 36px; 
-}
-
-.game-image {
-    width: 100%;
-    height: 200px; 
-    background: url('uvodni.jpg') no-repeat center center;
-    background-size: cover; 
-    margin-top: 0; 
-    margin-bottom: 20px; 
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px
-}
-
-
-.intro {
-    padding: 10px;
-    font-size: 16px; 
-    text-align: center; 
-    margin-bottom: 20px; 
-}
-
-.footer a .rules, .footer a .start-game { 
-    padding: 10px 20px;
+    font-size: 50px;
+    margin: 5px;
+    color: #ffffff
+  }
+  
+  p {
+    font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    background-color: #1fcca4;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 18px;
+    background-color: #283e50;
+    padding: 20px;
+    line-height: 1.5;
     text-align: center;
-    display: block; 
+    }
+  
+  a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .container {
+    display: flex;
+    margin: 100px auto;
+    max-width: 400px;
+    flex-direction: column;
+  }
+  
+  img {
     width: 100%;
-}
-.footer a.rules-link:hover .rules,
-.footer a.start-game-link:hover .start-game { 
-    background-color: #1cbb96; 
-}
-
-.footer a.start-game-link .start-game {
-    background-color: #0197f6;
-}
-
-.footer a.start-game-link:hover .start-game {
-    background-color: #0090e9; 
-}
+    display: block;
+    border-radius: 5px 5px 0px 0px;
+  }
+  
+  .container-main {
+    background-color: #283e50;
+  }
+  
+  .container-buttons {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    text-align: center;
+    height: 40px;
+  }
+  
+  .container-buttons_rules {
+    background: #1fcca4;
+    padding: 10px;
+    border-bottom: 1px solid #283e50;
+  }
+  
+  .container-buttons_play {
+    background: #0197f6;
+    padding: 10px;
+  }
+  
+  .container-buttons_rules:hover {
+    background: #1cbb96;
+  }
+  
+  .container-buttons_play:hover {
+    background: #0090e9;
+  }
+  
